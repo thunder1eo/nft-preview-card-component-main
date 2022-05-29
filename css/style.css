@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    background: var(--main-bg);
+    color: white;
+    font-family: 'Outfit';
+}
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -21px 4px 43px rgba(0, 0, 0, 0.25), 0px 21px 43px rgba(0, 0, 0, 0.25), 21px 0px 43px rgba(0, 0, 0, 0.25);
+}
+.preview{
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    background: url(/images/image-equilibrium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.preview img {
+    opacity: 0;
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.subtitle {
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin-top: 10px;
+}
+.para {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.price {
+    font-size: 14px;
+    color: var(--cyan);
+    display: table;
+}
+.price img {
+    margin-right:5px;
+}
+.price p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.time {
+    color: var(--soft-blue);
+    display: table;
+}
+.time p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.time img {
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+hr {
+    border: none; 
+    background-color: var(--line); 
+    height: 2px; 
+}
+.footer-card {
+    margin-top: 10px;
+    display: table;
+}
+.footer-card img {
+    width: 50px;
+    border: 1px white solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.footer-card p {
+    display: table-cell;
+    vertical-align: middle;
+    color: var(--soft-blue);
+}
+ a, a:visited {
+    color: white;
+    text-decoration: none;
+    transition: 0.4s ease all;
+}
+ a:hover {
+    transition: 0.4s ease all;
+    color: var(--cyan);
+}
